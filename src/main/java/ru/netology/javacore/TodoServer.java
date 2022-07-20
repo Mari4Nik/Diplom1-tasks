@@ -31,7 +31,7 @@ public class TodoServer {
                     final String input = in.readLine();
 
                     Gson gson = new Gson();
-                    Message message = gson.fromJson(in.readLine(), Message.class);
+                    Message message = gson.fromJson(input, Message.class);
                     if (message.getType().equals("ADD")) {
                         todos.addTask(message.getTask());
                     } else {

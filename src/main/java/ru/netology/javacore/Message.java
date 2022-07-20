@@ -11,6 +11,7 @@ public class Message {
     }
 
     public String getType() {
+
         return type;
     }
 
